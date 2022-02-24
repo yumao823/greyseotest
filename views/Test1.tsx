@@ -1,6 +1,5 @@
 import React, { FC, useState } from 'react'
 import { Button, Container, FormControl, InputGroup } from 'react-bootstrap'
-import Layout from '../layout/Layout'
 
 const Test1: FC = () => {
   const [value, setValue] = useState<string>('0')
@@ -9,7 +8,7 @@ const Test1: FC = () => {
   const handlePrint = () => {
     const _value = Number(value)
 
-    if (_value < 0) {
+    if (_value <= 0) {
       alert("Wrong Input!")
     } else if (_value % 22 === 0) {
       setResult('candybar')
@@ -23,15 +22,13 @@ const Test1: FC = () => {
   }
 
   return (
-    <Layout>
-      <Container>
-        <div className='d-flex mb-5'>
-          <FormControl type='number' onChange={e => setValue(e.target.value)} />
-          <Button className='ms-5' variant='success' size='lg' onClick={handlePrint}>Print</Button>
-        </div>
-        <h2>Result: {result}</h2>
-      </Container>
-    </Layout>
+    <Container>
+      <div className='d-flex mb-5'>
+        <FormControl type='number' onChange={e => setValue(e.target.value)} />
+        <Button className='ms-5' variant='success' size='lg' onClick={handlePrint}>Print</Button>
+      </div>
+      <h2>Result: {result}</h2>
+    </Container>
   )
 }
 
