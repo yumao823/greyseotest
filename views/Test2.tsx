@@ -7,7 +7,6 @@ const Test2: FC = () => {
   const [school, setSchool] = useState<string>('')
   const [area, setArea] = useState<string>('')
 
-
   return (
     <Container className='test2'>
       <div className='signup-form mx-auto mt-5 p-4'>

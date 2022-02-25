@@ -1,7 +1,5 @@
 import React, { FC } from 'react'
 
-
-
 const Test3: FC = () => {
   
   // if (recipe == 'SPANISH') {
@@ -37,9 +35,13 @@ const Test3: FC = () => {
   // amt = base * fudge;
   // sugar = 2 * bottom(amt) + top(amt) * 1.17;
  
-
   return (
-    <h1>Please check the Answer from views/Test3.tsx</h1>
+    <>
+      <h1>Please check the Answer from views/Test3.tsx</h1>
+      <a href='https://share.getcloudapp.com/yAukdzWj' rel="noreferrer" target='_blank'>
+        Click here to see a screenshot
+      </a>
+    </>
   )
 }
 
