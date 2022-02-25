@@ -14,3 +14,39 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.test2 {
+  font-family: 'Lato', sans-serif;
+
+  .signup-form {
+    background-color: #1679db;
+    color: #fff;
+    max-width: 500px;
+
+    .title {
+      font-style: italic;
+    }
+
+    .input-group {
+      &-text {
+        background-color: transparent;
+        color: #fff;
+
+        img {
+          width: 18px;
+        }
+      }
+    }
+
+    .form-control {
+      background-color: transparent;
+      color: #fff;
+
+      &::placeholder {
+        color: #fff;
+        font-style: italic;
+        opacity: 0.6;
+      }
+    }
+  }
+}
