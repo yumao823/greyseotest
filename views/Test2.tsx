@@ -18,6 +18,7 @@ const Test2: FC = () => {
           <Col sm={5}>
             <Form.Group className="mb-3">
               <Form.Label className='title'>Date of Birth</Form.Label>
+              {/* I have set normal input for now. I can replace if you want */}
               <InputGroup className="mb-3">
                 <InputGroup.Text>
                   <img src='/date.svg' />
